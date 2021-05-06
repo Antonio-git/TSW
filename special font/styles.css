@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icon_font";
+  src: url("fonts/icon_font.eot");
+  src: url("fonts/icon_font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body{
+  font-size: 29px;
+  /*font-family:"icon_font";*/ 
+}
+input{
+  width: 30px;
+}
+
+[data-icon]:before {
+  font-family: "icon_font";
+  content: attr(data-icon);
+}
+
+.glyphs {
+  list-style-type: none;
+  color: yellowgreen;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+li{
+  padding: 30px;
+}
+
+li:hover {
+  color: blue;
+  font-size: 300%;
+  
+}
+.container{
+  max-width: 75%;
+  height: 100%;
+}
+
