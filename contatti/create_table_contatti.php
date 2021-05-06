@@ -19,7 +19,7 @@
 	
 	$ret = pg_query($db,$sql);
 	if(!$ret)
-		echo "Errore creazione tabella".pg_last_error();
+		echo "Errore creazione tabella".pg_last_error($ret);
 	else
 		echo "<h1>TABELLA CREATA</h1>"
 	?>
